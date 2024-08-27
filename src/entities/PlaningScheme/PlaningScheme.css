@@ -1,0 +1,173 @@
+.planing__itemTitle {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.planing__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.swiper-schema1 {
+  max-width: 650px;
+  flex: 1;
+}
+
+.planing__info {
+  flex: 1;
+}
+
+.planing__scheme {
+  position: relative;
+}
+
+.planing__schemeFloorFirst,
+.planing__schemeFloorSecond {
+  width: 80%;
+}
+
+.planing__schemeFloorSecond {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 
+
+  planing table
+
+*/
+
+.planing__table {
+  border: 2px solid #dce6ff;
+  padding: 35px 45px;
+  border-spacing: 0px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.planing__tableHead tr > th {
+  border-bottom: 2px solid #dce6ff;
+}
+
+.planing__tableHead > tr th {
+  margin-bottom: 15px;
+}
+
+.planing__tableHead > tr th section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.planing__tableHead > tr th span {
+  font-weight: 400;
+}
+
+.planing__tableHead > tr th span:first-child {
+  font-size: 1.56rem;
+  color: #e2711d;
+  margin-bottom: 10px;
+}
+
+.planing__tableHead > tr th span:last-child {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.planing__tableTbody tr:first-child td:first-child {
+  padding-top: 30px;
+}
+
+.planing__tableTbody td:first-child {
+  padding: 15px 50px 15px 0;
+  max-width: 240px;
+}
+
+.planing__tableTbody td:last-child {
+  padding-left: 20px;
+}
+
+.planing__tableTbody > tr > td:first-child {
+  border-right: 2px solid #dce6ff;
+}
+
+.planing__btnsWrap {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+}
+
+.planing__btnCallback,
+.planing__btnNext {
+  padding: 15px 25px;
+  margin-bottom: 15px;
+
+  background: none;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  color: #000;
+}
+
+.planing__btnNext {
+  border: 2px solid #96b7ff;
+}
+
+.planing__btnCallback {
+  border: 2px solid #e2711d;
+}
+
+.planing__btnNext img {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .planing__content {
+    flex-direction: column-reverse;
+  }
+
+  .planing__itemTitle {
+    margin-bottom: 30px;
+  }
+
+  .swiper-schema1 {
+    margin-bottom: 80px;
+    width: -webkit-fill-available;
+  }
+
+  .planing__item:last-child .swiper {
+    margin-bottom: 0px;
+  }
+
+  .planing__schemeFloorFirst,
+  .planing__schemeFloorSecond {
+    width: 100%;
+  }
+
+  .planing__info {
+    margin-bottom: 30px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .planing__itemTitle {
+    margin-bottom: 40px;
+  }
+
+  .planing__table {
+    padding: 20px 25px;
+  }
+}

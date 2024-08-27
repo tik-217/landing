@@ -1,0 +1,22 @@
+.btnSubmit {
+  width: 100%;
+
+  outline: none;
+  border: none;
+
+  background: #e2711d;
+  color: white;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  cursor: pointer;
+
+  margin-bottom: 10px;
+
+  font-weight: 400;
+}
+
+.btnSubmit:hover {
+  background: #c7651a;
+}

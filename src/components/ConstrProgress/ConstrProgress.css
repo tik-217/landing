@@ -1,0 +1,42 @@
+.constrProgress__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.constrProgress__slider {
+  display: flex;
+  justify-content: center;
+}
+
+.constrProgress__slider .swiper .swiper-button-prev::after,
+.constrProgress__slider .swiper .swiper-button-next::after {
+  color: #96b7ff;
+}
+
+.constrProgress__slider .swiper .swiper-pagination-bullet-active {
+  background-color: #e2711d;
+}
+
+.constrProgress__slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.constrProgress__sliderItem {
+  width: 70%;
+  height: 500px;
+}
+
+.constrProgress__sliderItem img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .constrProgress__sliderItem {
+    height: 300px;
+    width: 100%;
+    padding: 5px;
+  }
+}

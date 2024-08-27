@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("./assets/lib/normalize.css");
+
+@font-face {
+  font-family: Lora;
+  src: url("./assets/fonts/Lora/Lora-VariableFont_wght.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Lora;
+  src: url("./assets/fonts/Lora/Lora-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+}
+
+* {
+  font-family: Lora;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+#root {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.87rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.widthStop {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.generalMargin {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.marginTop {
+  margin-top: 100px;
+}
+
+.borders {
+  padding: 15px;
+  border: 1px solid;
+}
+
+@media screen and (max-width: 1300px) {
+  .generalMargin {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .generalMargin {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .generalMargin {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
