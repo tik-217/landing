@@ -2,9 +2,9 @@
 import Callback from "../../entities/Callback/Callback";
 
 // images
-import image147 from "../../assets/images/1_47-image.jpg";
-import image143 from "../../assets/images/1_43-image.jpg";
-import image144 from "../../assets/images/1_44-image.jpg";
+import image147 from "../../assets/images/1_47-image.533a169b1733d7df03a2_5_11zon_5_11zon.webp";
+import image143 from "../../assets/images/1_43-image.11ae9a7b7b38d4a51145_1_11zon_1_11zon.webp";
+import image144 from "../../assets/images/1_44-image.b490d5f048fad3f4c558_2_11zon_2_11zon.webp";
 
 // styles
 import "./AboutUs.css";

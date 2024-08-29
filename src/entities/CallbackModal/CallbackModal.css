@@ -105,6 +105,15 @@
   margin-bottom: 20px;
 }
 
+.callbackModal .callbackModal__wrap .callbackModal__inputTel button,
+.callbackModal .callbackModal__wrap .callbackModal__inputTel input {
+  border: none;
+}
+
+.callbackModal .callbackModal__wrap .callbackModal__inputTel input {
+  width: 100%;
+}
+
 @media screen and (max-width: 480px) {
   .callbackModal__wrap {
     padding: 30px;

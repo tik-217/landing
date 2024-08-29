@@ -9,10 +9,11 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
+    "axios": "^1.7.5",
     "formik": "^2.4.6",
-    "intl-tel-input": "^24.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-international-phone": "^4.3.0",
     "react-scripts": "5.0.1",
     "swiper": "^11.1.10",
     "web-vitals": "^2.1.4"

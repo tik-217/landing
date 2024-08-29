@@ -1,20 +1,31 @@
-// react
-import { useRef } from "react";
+// react-international-phone
+import { PhoneInput } from "react-international-phone";
+
+// hooks
+import useCallbackFormPhone from "../../hooks/useCallbackFormPhone";
+import useSuccessForm from "../../hooks/useSuccessForm";
 
 // entities
 import BtnSubmit from "../../entities/BtnSubmit/BtnSubmit";
 import Header from "../../entities/Header/Header";
 
-// hooks
-import usePhoneInput from "../../hooks/usePhoneInput";
-
 // styles
 import "./MainScreen.css";
 
 export default function MainScreen() {
-  const phone = useRef(null);
+  const {
+    values,
+    errors,
+    handleChange,
+    handleSubmit,
+    handleBlur,
+    touched,
+    isSubmitting,
+    setSubmitting,
+    isValid,
+  } = useCallbackFormPhone();
 
-  usePhoneInput(phone);
+  const isSubmit = useSuccessForm({ isSubmitting, setSubmitting, isValid });
 
   return (
     <div className="mainScreen" id="main">
@@ -22,7 +33,7 @@ export default function MainScreen() {
         <Header />
         <div className="mainScreen__content">
           <div className="mainScreen__contentWrap">
-            <form className="mainCallback">
+            <form className="mainCallback" onSubmit={handleSubmit}>
               <div className="mainCallback__wrap">
                 <h2 className="mainCallback__title">Получить обратную связь</h2>
                 <section className="mainCallback__inputSection">
@@ -30,7 +41,22 @@ export default function MainScreen() {
                     Телефон
                   </label>
                   <div className="mainCallback__inputs">
-                    <input type="tel" ref={phone} />
+                    <PhoneInput
+                      name="phone"
+                      defaultCountry="ru"
+                      value={values.phone}
+                      className="mainCallback__input"
+                      onChange={(phone) => handleChange("phone")(phone)}
+                      onBlur={handleBlur}
+                    />
+                    {touched.phone && errors.phone ? (
+                      <p className="inputErrorText">{errors.phone}</p>
+                    ) : null}
+                    {isSubmit && (
+                      <p className="inputSuccessText">
+                        Форма успешнно отправлена
+                      </p>
+                    )}
                   </div>
                 </section>
                 <div className="mainCallback__submitSection">

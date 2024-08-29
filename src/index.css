@@ -3,12 +3,14 @@
 @font-face {
   font-family: Lora;
   src: url("./assets/fonts/Lora/Lora-VariableFont_wght.ttf");
+  font-display: auto;
 }
 
 @font-face {
   font-family: Lora;
   src: url("./assets/fonts/Lora/Lora-Italic-VariableFont_wght.ttf");
   font-style: italic;
+  font-display: auto;
 }
 
 * {
@@ -79,6 +81,16 @@ a {
 .borders {
   padding: 15px;
   border: 1px solid;
+}
+
+.inputErrorText {
+  font-size: 14px;
+  color: #e64343;
+}
+
+.inputSuccessText {
+  font-size: 14px;
+  color: #39b517;
 }
 
 @media screen and (max-width: 1300px) {

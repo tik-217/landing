@@ -1,10 +1,12 @@
+// react
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+
+// components
 import App from "./components/App/App";
 
-// intl-tel-input
-import "intl-tel-input/build/css/intlTelInput.css";
+// styles
+import "./index.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLDivElement

@@ -26,7 +26,7 @@ interface ITableSchemes {
   value: string;
 }
 
-interface PlaningScheme {
+interface IPlaningScheme {
   totalArea: string;
   tableSchemes: ITableSchemes[];
   title: string;
@@ -40,7 +40,7 @@ export default function PlaningScheme({
   title,
   scheme,
   schemeFloor2,
-}: PlaningScheme) {
+}: IPlaningScheme) {
   const swiper: MutableRefObject<SwiperRef | null> = useRef(null);
   const [floor, setFloor] = useState(true);
 
@@ -87,8 +87,8 @@ export default function PlaningScheme({
               </tr>
             </thead>
             <tbody className="planing__tableTbody">
-              {tableSchemes.map((el) => (
-                <tr>
+              {tableSchemes.map((el, i) => (
+                <tr key={el.title + i}>
                   <td>{el.title}</td>
                   <td>{el.value}</td>
                 </tr>

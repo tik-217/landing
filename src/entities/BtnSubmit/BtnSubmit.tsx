@@ -1,3 +1,4 @@
+// styles
 import "./BtnSubmit.css";
 
 export default function BtnSubmit() {

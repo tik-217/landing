@@ -3,12 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 // images
-import image1 from "../../assets/images/PHOTO-2024-08-23-17-49-08.jpg";
-import image2 from "../../assets/images/PHOTO-2024-08-23-17-49-08 2.jpg";
-import image4 from "../../assets/images/PHOTO-2024-08-23-17-49-08 4.jpg";
-import image5 from "../../assets/images/PHOTO-2024-08-23-17-49-08 5.jpg";
-import image6 from "../../assets/images/PHOTO-2024-08-23-17-49-08 6.jpg";
-import image7 from "../../assets/images/PHOTO-2024-08-23-17-49-08 7.jpg";
+import image1 from "../../assets/images/PHOTO-2024-08-23-17-49-08.4.webp";
+import image2 from "../../assets/images/PHOTO-2024-08-23-17-49-08 2.7.webp";
+import image4 from "../../assets/images/PHOTO-2024-08-23-17-49-08 4.8.webp";
+import image5 from "../../assets/images/PHOTO-2024-08-23-17-49-08 5.7.webp";
+import image6 from "../../assets/images/PHOTO-2024-08-23-17-49-08 6.8.webp";
+import image7 from "../../assets/images/PHOTO-2024-08-23-17-49-08 7.6.webp";
 
 // styles
 import "./ConstrProgress.css";

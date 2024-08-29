@@ -1,7 +1,9 @@
-// images
+// entities
 import Callback from "../../entities/Callback/Callback";
-import image1 from "../../assets/images/1_56 - Фото.jpg";
-import image2 from "../../assets/images/1_57 - Фото.jpg";
+
+// images
+import image1 from "../../assets/images/1_56 - Фото.c2798ea2a7238ea23321_8_8.webp";
+import image2 from "../../assets/images/1_57 - Фото.147ae6da0fa161342859_9_9.webp";
 
 // styles
 import "./Advantages.css";

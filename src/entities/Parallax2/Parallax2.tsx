@@ -1,3 +1,4 @@
+// styles
 import "./Parallax2.css";
 
 export default function Parallax2() {

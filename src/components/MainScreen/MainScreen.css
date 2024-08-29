@@ -1,5 +1,5 @@
 .mainScreen {
-  background: url("../../assets/images/1_51 - Фото.jpg");
+  background: url("../../assets/images/1_51 - Фото.b598ba5829bc29990d8f_6_6.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,13 +131,8 @@
   display: block;
 }
 
-.iti {
+.mainCallback__inputs .mainCallback__input input {
   width: 100%;
-}
-
-.iti__tel-input {
-  width: inherit;
-  padding: 10px 0;
 }
 
 .mainCallback__submitBtn {

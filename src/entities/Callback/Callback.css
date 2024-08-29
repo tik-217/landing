@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 35px 0;
+  position: relative;
 }
 
 .callback__info {
@@ -17,6 +18,19 @@
 .callback__form {
   max-width: 330px;
   width: 100%;
+}
+
+.callback__form_success {
+  font-size: 14px;
+  text-align: center;
+  max-width: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  color: green;
+
+  transform: translateX(-50%);
 }
 
 .callback__descrip {
@@ -38,6 +52,11 @@
 
 .callback__inputTel {
   margin-bottom: 20px;
+}
+
+.callback .callback__inputTel button,
+.callback .callback__inputTel input {
+  border: none;
 }
 
 @media screen and (max-width: 950px) {
