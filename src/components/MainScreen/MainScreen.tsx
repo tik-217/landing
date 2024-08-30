@@ -34,38 +34,36 @@ export default function MainScreen() {
         <div className="mainScreen__content">
           <div className="mainScreen__contentWrap">
             <form className="mainCallback" onSubmit={handleSubmit}>
-              <div className="mainCallback__wrap">
-                <h2 className="mainCallback__title">Получить обратную связь</h2>
-                <section className="mainCallback__inputSection">
-                  <label htmlFor="phone" className="mainCallback__inputLabel">
-                    Телефон
-                  </label>
-                  <div className="mainCallback__inputs">
-                    <PhoneInput
-                      name="phone"
-                      defaultCountry="ru"
-                      value={values.phone}
-                      className="mainCallback__input"
-                      onChange={(phone) => handleChange("phone")(phone)}
-                      onBlur={handleBlur}
-                    />
-                    {touched.phone && errors.phone ? (
-                      <p className="inputErrorText">{errors.phone}</p>
-                    ) : null}
-                    {isSubmit && (
-                      <p className="inputSuccessText">
-                        Форма успешнно отправлена
-                      </p>
-                    )}
-                  </div>
-                </section>
-                <div className="mainCallback__submitSection">
-                  <BtnSubmit />
-                  <p className="mainCallback__submitDescrip">
-                    Нажимаю на кнопку «Отправить» вы соглашаетесь на обработку
-                    персональных данных
-                  </p>
+              <h2 className="mainCallback__title">Получить обратную связь</h2>
+              <section className="mainCallback__inputSection">
+                <label htmlFor="phone" className="mainCallback__inputLabel">
+                  Телефон
+                </label>
+                <div className="mainCallback__inputs">
+                  <PhoneInput
+                    name="phone"
+                    defaultCountry="ru"
+                    value={values.phone}
+                    className="mainCallback__input"
+                    onChange={(phone) => handleChange("phone")(phone)}
+                    onBlur={handleBlur}
+                  />
+                  {touched.phone && errors.phone ? (
+                    <p className="inputErrorText">{errors.phone}</p>
+                  ) : null}
+                  {isSubmit && (
+                    <p className="inputSuccessText">
+                      Форма успешнно отправлена
+                    </p>
+                  )}
                 </div>
+              </section>
+              <div className="mainCallback__submitSection">
+                <BtnSubmit />
+                <p className="mainCallback__submitDescrip">
+                  Нажимаю на кнопку «Отправить» вы соглашаетесь на обработку
+                  персональных данных
+                </p>
               </div>
             </form>
             <section className="mainAdvantages">

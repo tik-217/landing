@@ -72,17 +72,8 @@
   color: black;
 
   margin-right: 70px;
-}
-
-.mainCallback__wrap {
-  border: 1px solid black;
-  padding: 30px 40px 60px 40px;
-
-  background: #fff;
-
-  position: relative;
-  top: 10px;
-  left: 10px;
+  padding: 30px 40px;
+  width: 100%;
 }
 
 .mainCallback__title {
@@ -93,6 +84,7 @@
 
 .mainAdvantages {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .mainAdvantages__title_mark {
@@ -178,6 +170,7 @@
 
   .mainAdvantages {
     margin-left: 10px;
+    width: auto;
   }
 
   .mainAdvantages__list {
@@ -198,12 +191,11 @@
     width: 85%;
   }
 
-  .mainCallback,
-  .mainCallback__wrap {
+  .mainCallback {
     padding: 0px;
   }
 
-  .mainCallback__wrap {
+  .mainCallback {
     padding: 20px;
   }
 

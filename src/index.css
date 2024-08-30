@@ -3,14 +3,14 @@
 @font-face {
   font-family: Lora;
   src: url("./assets/fonts/Lora/Lora-VariableFont_wght.ttf");
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Lora;
   src: url("./assets/fonts/Lora/Lora-Italic-VariableFont_wght.ttf");
   font-style: italic;
-  font-display: auto;
+  font-display: swap;
 }
 
 * {
