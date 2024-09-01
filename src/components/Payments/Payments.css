@@ -13,11 +13,13 @@
 }
 
 .payments__item {
-  padding: 45px 10px 45px 45px;
   flex: 1;
   position: relative;
+
   margin-right: 60px;
+  padding: 45px 10px 45px 45px;
   border: 1px solid #e2711d;
+
   box-sizing: border-box;
 }
 
@@ -75,10 +77,8 @@
   content: "—";
 
   position: absolute;
-  top: 50%;
+  top: 0;
   left: -20px;
-
-  transform: translateY(-50%);
 }
 
 @media screen and (max-width: 950px) {
@@ -99,4 +99,7 @@
   .payments__content {
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 480px) {
 }

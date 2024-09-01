@@ -16,7 +16,9 @@ export default function Advantages() {
         <div className="advantages__content">
           <ol className="advantages__list">
             <li className="advantages__item">200 метров до центра станицы</li>
-            <li className="advantages__item">1 км до моря</li>
+            <li className="advantages__item">
+              1 км до Азовского моря, 15 мин от Черного моря
+            </li>
             <li className="advantages__item">
               Школа, детский сад, торговый центр
             </li>

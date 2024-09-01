@@ -7,7 +7,7 @@
 }
 
 .callback__info {
-  max-width: 390px;
+  max-width: 420px;
 }
 
 .callback__title {
@@ -34,7 +34,7 @@
 }
 
 .callback__descrip {
-  color: #00000040;
+  color: #000000cf;
   font-size: 0.87rem;
   line-height: 20px;
 }
@@ -86,7 +86,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .callback {
+  .callback.borders {
     padding: 15px 35px;
     text-align: center;
   }

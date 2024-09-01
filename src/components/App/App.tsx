@@ -1,8 +1,7 @@
 // react
-import { createContext, useState } from "react";
+import { createContext, lazy, useState } from "react";
 
 // components
-import CallbackModal from "../../entities/CallbackModal/CallbackModal";
 import ConstrProgress from "../ConstrProgress/ConstrProgress";
 import Parallax1 from "../../entities/Parallax1/Parallax1";
 import Parallax2 from "../../entities/Parallax2/Parallax2";
@@ -16,6 +15,10 @@ import Footer from "../Footer/Footer";
 
 // styles
 import "./App.css";
+
+const CallbackModal = lazy(
+  () => import("../../entities/CallbackModal/CallbackModal")
+);
 
 interface IModalContext {
   isOpenModal: boolean;

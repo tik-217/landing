@@ -78,7 +78,7 @@ export default function Header() {
             </ul>
           </nav>
           <div className={`header__contacts ${mobMenuOpen ? "active" : ""}`}>
-            <a href="tel:+79883401414">+ 7 (988) 340-14-14</a>
+            <a href="tel:+78005056485">+ 7 (800) 505-64-85</a>
           </div>
           <div
             className={`toggle-menu ${mobMenuOpen ? "active" : ""}`}

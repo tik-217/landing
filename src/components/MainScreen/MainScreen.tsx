@@ -74,7 +74,9 @@ export default function MainScreen() {
                 </mark>
               </h2>
               <ul className="mainAdvantages__list">
-                <li className="mainAdvantages__item">1 км до моря</li>
+                <li className="mainAdvantages__item">
+                  1 км до Азовского моря, 15 мин от Черного моря
+                </li>
                 <li className="mainAdvantages__item">
                   200 метров до центра станицы
                 </li>

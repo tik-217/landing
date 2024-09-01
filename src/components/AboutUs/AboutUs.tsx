@@ -11,12 +11,13 @@ import "./AboutUs.css";
 
 export default function AboutUs() {
   return (
-    <div className="aboutUs marginTop widthStop">
+    <div className="aboutUs marginTop widthStop" id="aboutUs">
       <div className="aboutUs__wrap generalMargin">
         <div className="aboutUs__descripSection">
-          <h2 className="aboutUs__title" id="aboutUs">
-            О комплексе
-          </h2>
+          <div>
+            <h2 className="aboutUs__title">О комплексе</h2>
+            <p className="aboutUs__subtitle">Жилье у моря? Легко!</p>
+          </div>
           <p className="aboutUs__descrip">
             Жилой комплекс «Центральный» – это недвижимость для жизни, отпуска,
             инвестиций и просто для счастья.
@@ -31,7 +32,7 @@ export default function AboutUs() {
               <div className="smallCards__descripSection">
                 <p className="smallCards__descrip">
                   Комплекс расположен в живописном и экологически чистом месте
-                  ст. Тамань. При этом в этом районе хорошо развита социальна и
+                  ст. Тамань. При этом в этом районе хорошо развита социальная и
                   торговая инфраструктура.
                 </p>
                 <p className="smallCards__descrip">
@@ -47,11 +48,12 @@ export default function AboutUs() {
               <div className="smallCards__descripSection">
                 <p className="smallCards__descrip">
                   Благоустроенный двор, в котором комфортно находиться в любое
-                  время суток. Отдельное парковочное место у каждого автомобиля.
+                  время суток. Отдельное парковочное место у каждого дома для
+                  автомобиля, а также зона отдыха.
                 </p>
                 <p className="smallCards__descrip">
-                  Озеленение формируется кустарниками, деревьями и цветочными
-                  клумбами.
+                  Строительство осуществляется в соответствии с разрешительной
+                  документацией.
                 </p>
               </div>
               <div className="smallCards__photo borders">
@@ -60,7 +62,6 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-
         <Callback
           title={"Узнать о комплексе подробнее"}
           description={

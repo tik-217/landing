@@ -74,6 +74,8 @@
   margin-right: 70px;
   padding: 30px 40px;
   width: 100%;
+
+  height: fit-content;
 }
 
 .mainCallback__title {
@@ -84,34 +86,51 @@
 
 .mainAdvantages {
   margin-bottom: 30px;
-  width: 100%;
+}
+
+.mainAdvantages__title {
+  margin-bottom: 40px;
 }
 
 .mainAdvantages__title_mark {
   background: none;
-  color: #e58b47;
+  color: #ffda92;
 }
 
 .mainAdvantages__list {
   list-style: none;
+  margin-left: 30px;
 }
 
 .mainAdvantages__item {
-  margin-bottom: 15px;
-  font-weight: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
   position: relative;
+  max-width: 350px;
+  min-width: 230px;
 }
 
 .mainAdvantages__item::after {
   content: "";
   display: block;
-  width: 20px;
-  height: 2px;
-  background: #e58b47;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 50%;
-  left: -35px;
+  top: 30%;
+  left: -60px;
   transform: translateY(-50%);
+}
+
+.mainAdvantages__item:first-child:after {
+  background: url("../../assets/svg/plump.svg");
+}
+
+.mainAdvantages__item:nth-child(2):after {
+  background: url("../../assets/svg/house-by-the-sea.svg");
+}
+
+.mainAdvantages__item:last-child:after {
+  background: url("../../assets/svg/houses.svg");
 }
 
 .mainCallback__inputSection {
@@ -182,30 +201,46 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
+  .mainScreen__content {
+    margin-top: 20px;
+  }
+
+  .mainAdvantages {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
   .mainAdvantages__title {
     font-size: 1.5em;
   }
 
   .mainCallback {
-    width: 85%;
-  }
-
-  .mainCallback {
-    padding: 0px;
-  }
-
-  .mainCallback {
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .mainCallback__title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .mainScreen {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .mainScreen__contentWrap {
+    margin: 0 20px;
+  }
+
   .mainAdvantages__list {
     margin-left: 30px;
+  }
+
+  .mainAdvantages__item {
+    min-width: auto;
   }
 }

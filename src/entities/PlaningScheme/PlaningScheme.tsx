@@ -48,7 +48,6 @@ export default function PlaningScheme({
 
   return (
     <div className="planing__item">
-      <h3 className="planing__itemTitle">{title}</h3>
       <div className="planing__content planing__schemeSlider1">
         <Swiper
           loop
@@ -73,48 +72,31 @@ export default function PlaningScheme({
         </Swiper>
 
         <section className="planing__info">
-          <table className="planing__table">
-            <thead className="planing__tableHead">
-              <tr>
-                <th colSpan={2}>
-                  <section>
-                    <span className="planing__floorSchema1">
-                      {floor ? "1-ый этаж" : "2-ой этаж"}
-                    </span>
-                    <span>{totalArea}</span>
-                  </section>
-                </th>
-              </tr>
-            </thead>
-            <tbody className="planing__tableTbody">
-              {tableSchemes.map((el, i) => (
-                <tr key={el.title + i}>
-                  <td>{el.title}</td>
-                  <td>{el.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <div className="planing__btns">
-            <div className="planing__btnsWrap">
-              <button
-                className="planing__btnNext planing__btnNextSheme1"
-                onClick={() => {
-                  setFloor(!floor);
-                  swiper.current && swiper.current.swiper.slideNext(0);
-                }}
-              >
-                <span className="planing__btnNextTextSheme1">
-                  {floor ? "На второй этаж" : "На первый этаж"}
-                </span>
-                <img src={arrow} alt="arrow" />
-              </button>
-              <button
-                className="planing__btnCallback"
-                onClick={() => isModal.handleChangeModal()}
-              >
-                Заказать обратный звонок
-              </button>
+          <div className="planing__table">
+            <span className="planing__floorSchema1">
+              {floor ? "1-ый этаж" : "2-ой этаж"}
+            </span>
+            <div className="planing__btns">
+              <div className="planing__btnsWrap">
+                <button
+                  className="planing__btnNext planing__btnNextSheme1"
+                  onClick={() => {
+                    setFloor(!floor);
+                    swiper.current && swiper.current.swiper.slideNext(0);
+                  }}
+                >
+                  <span className="planing__btnNextTextSheme1">
+                    {floor ? "На второй этаж" : "На первый этаж"}
+                  </span>
+                  <img src={arrow} alt="arrow" />
+                </button>
+                <button
+                  className="planing__btnCallback"
+                  onClick={() => isModal.handleChangeModal()}
+                >
+                  Заказать обратный звонок
+                </button>
+              </div>
             </div>
           </div>
           <CallbackModal />

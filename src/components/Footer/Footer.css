@@ -18,11 +18,18 @@
 }
 
 .footer__info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 240px 330px;
+  grid-template-rows: 1fr 1fr;
 }
 
 .footer__listWrap {
-  margin-right: 60px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.footer__listWrap:last-child {
+  margin-right: 0;
 }
 
 .footer__listTitle {
@@ -41,11 +48,22 @@
 }
 
 .footer__listItem {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  line-height: 140%;
 }
 
 .footer__companyName {
   font-size: 1.37rem;
+}
+
+@media screen and (max-width: 850px) {
+  .footer__info {
+    grid-template-columns: 270px;
+  }
+
+  .footer__list {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {

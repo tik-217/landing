@@ -6,7 +6,6 @@
 .planing__content {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .swiper-schema1 {
@@ -47,53 +46,17 @@
   padding: 35px 45px;
   border-spacing: 0px;
   max-width: 450px;
-  width: 100%;
+  width: -webkit-fill-available;
 }
 
-.planing__tableHead tr > th {
-  border-bottom: 2px solid #dce6ff;
-}
-
-.planing__tableHead > tr th {
-  margin-bottom: 15px;
-}
-
-.planing__tableHead > tr th section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.planing__tableHead > tr th span {
-  font-weight: 400;
-}
-
-.planing__tableHead > tr th span:first-child {
+.planing__floorSchema1 {
   font-size: 1.56rem;
   color: #e2711d;
   margin-bottom: 10px;
 }
 
-.planing__tableHead > tr th span:last-child {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
-}
-
-.planing__tableTbody tr:first-child td:first-child {
-  padding-top: 30px;
-}
-
-.planing__tableTbody td:first-child {
-  padding: 15px 50px 15px 0;
-  max-width: 240px;
-}
-
-.planing__tableTbody td:last-child {
-  padding-left: 20px;
-}
-
-.planing__tableTbody > tr > td:first-child {
-  border-right: 2px solid #dce6ff;
+.planing__btns {
+  width: fit-content;
 }
 
 .planing__btnsWrap {
@@ -169,5 +132,10 @@
 
   .planing__table {
     padding: 20px 25px;
+  }
+
+  .planing__btnNext img {
+    margin-left: 10px;
+    width: 30%;
   }
 }

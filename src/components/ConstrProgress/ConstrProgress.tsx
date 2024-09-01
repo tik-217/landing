@@ -1,6 +1,6 @@
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 // images
 import image1 from "../../assets/images/PHOTO-2024-08-23-17-49-08.4.webp";
@@ -17,18 +17,35 @@ import "swiper/css/navigation";
 
 export default function ConstrProgress() {
   return (
-    <div className="constrProgress widthStop">
-      <div className="constrProgress__wrap marginTop generalMargin">
-        <h2 className="constrProgress__title" id="constrProgress">
-          Ход строительства
-        </h2>
+    <div className="constrProgress" id="constrProgress">
+      <div className="constrProgress__wrap marginTop">
+        <h2 className="constrProgress__title">Ход строительства</h2>
         <div className="constrProgress__slider">
           <Swiper
-            modules={[Navigation]}
-            autoHeight
+            modules={[Navigation, Pagination]}
+            slidesPerView={2}
+            centeredSlides={true}
+            pagination={{
+              clickable: true,
+            }}
             navigation
             loop
-            centeredSlides={true}
+            autoHeight
+            breakpoints={{
+              0: {
+                spaceBetween: 50,
+                slidesPerView: 1,
+              },
+              900: {
+                spaceBetween: 80,
+              },
+              1100: {
+                spaceBetween: 100,
+              },
+              1101: {
+                spaceBetween: 130,
+              },
+            }}
           >
             <SwiperSlide>
               <div className="constrProgress__sliderItem borders">
