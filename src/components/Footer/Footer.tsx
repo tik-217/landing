@@ -20,7 +20,7 @@ export default function Footer() {
               </h3>
               <ul className="footer__list">
                 <li className="footer__listItem">
-                  <a href="tel:+78005056485">+ 7 (800) 505-64-85</a>
+                  <a href="tel:+79030085601">+7 (903) 008-56-01</a>
                 </li>
               </ul>
             </section>
