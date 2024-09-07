@@ -9,7 +9,7 @@ interface ISendMail {
 export async function sendMail(formValues: ISendMail) {
   const sendForm = await axios({
     method: "GET",
-    url: "https://jkcentralni.store/mail-test.php",
+    url: "https://jkcentralni.store/index.php",
     params: {
       name: formValues.name,
       phone: formValues.phone,

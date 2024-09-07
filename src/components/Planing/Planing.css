@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 768px) {
   .planing__title {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .planing__item {
